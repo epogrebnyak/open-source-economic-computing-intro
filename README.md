@@ -15,10 +15,6 @@ Language versions:
 
 - Julia: http://julialang.org/
 
-Table:
-- has roots in... 
-- 
-
 Notes: 
 - all are interpreted languages
 - may have different IDEs for ease of use
@@ -26,6 +22,16 @@ Notes:
 - have package installers
 - IPython
 
+View on evolution of applications of programming languages
+
+```
+Entrprise level software building: FORTRAN, Java, ... -> Python
+Scientific computing:                          MATLAB -> Python (with NumPy), R
+Learn programming:                      BASIC, Pascal -> Python  
+Desktop automation (incl MS Office):              VBA -> Python (sometimes)
+Econometrics:                             EViews, ... -> R, Python (with Pandas and statmodels), Julia
+High performance statistic computing:             C++ -> Julia 
+```
 
 Suggested topics:
 -----------------
