@@ -1,8 +1,30 @@
-Introduction to R, python and Julia - open source software for statistic analysis and econometrics
-==================================================================================================
-17:56 18.11.2015
+Introduction to open source numerical analysis software: overview of R, python/pandas and Julia
+===============================================================================================
 
-tag: open-source-economic-computing-intro
+### Introduction to R, python/pandas and Julia
+  - scope of application - what are these programming languages for?
+  - history of developement
+  - relation to other programing languages
+  - charts: speed comparison, packages, versions, popularity, github/stackoverflow references
+
+### 'Dive in' general excercises
+- setup/installation of packages/access to online environments
+- excercises with language cross-reference: 
+  - basic operations 
+  - econometircs-ralted building blocks
+  - data access
+
+### Econometric excecises 
+- ordinary least squares (OLS)
+- maximum likelihood (ML)
+ 
+More:
+- simulation
+- time series analysis topics: ...
+ 
+### Extras
+- other enabling tools: github, SO, md/pandoc
+- mention and some excercises: Matlab/Octave, gretl
 
 
 Language versions:
@@ -25,12 +47,17 @@ Notes:
 View on evolution of applications of programming languages
 
 ```
-Entrprise level software building: FORTRAN, Java, ... -> Python
-Scientific computing:                          MATLAB -> Python (with NumPy), R
-Learn programming:                      BASIC, Pascal -> Python  
-Desktop automation (incl MS Office):              VBA -> Python (sometimes)
-Econometrics:                             EViews, ... -> R, Python (with Pandas and statmodels), Julia
-High performance statistic computing:             C++ -> Julia 
+Various programming tasks:
+Entrprise software building:    FORTRAN(?), Java, ... -> Python
+Learn programming:                   BASIC, Pascal, C -> Python  
+Learn/apply OOP:                 C++, Java, smalltalk -> Python  
+Desktop automation (incl MS Office):              VBA -> Python (sometimes e.g. ExcelWings)
+Desktop scripting                                     -> Python
+
+Rather econometric tasks:
+Scientific/engineering computing:              MATLAB -> R, Python (with SciPy/NumPy), 
+Econometrics:                           EViews, gretl -> R, Python (with Pandas and statmodels), Julia
+High performance statistic computing:             C++ -> Julia
 ```
 
 Suggested topics:
