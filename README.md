@@ -1,30 +1,54 @@
 Introduction to open source numerical analysis software: overview of R, python/pandas and Julia
 ===============================================================================================
 
-### Introduction to R, python/pandas and Julia
+### 1. Introduction to R, python/pandas and Julia
   - scope of application - what are these programming languages for?
   - history of developement
-  - relation to other programing languages
-  - charts: speed comparison, packages, versions, popularity, github/stackoverflow references
+    - personalities
+    - workflow for language development
+    - more in 'ecosystem': journals, events
+    - relation to other programming languages
+  - charts
+    - speed comparison
+    - number of packages
+    - version maturity
+    - job search popularity
+    - github
+    - stackoverflow references
+      - as of Feb 12, 2016, thousands: python 532.2, r 124.3, julia 1.5 (also matlab 57.0)
+    - other stats
+      - lines of code per sample task
+      - size of language core
+      - distribution package Mb 
 
-### 'Dive in' general excercises
-- setup/installation of packages/access to online environments
-- excercises with language cross-reference: 
-  - basic operations 
-  - econometircs-ralted building blocks
+### 2. General programming exercises
+- setup/installation of packages and access to online environments
+  - language versions and their compatibility 
+  - installation on Windows
+  - command line and IDEs
+  - packages management (install.packages, pip)
+- excercises (with language cross-reference, as [here](http://hyperpolyglot.org/numerical-analysis))
+  - basic operations
+  - econometrics-ralted building blocks
   - data access
 
-### Econometric excecises 
+### 3. Econometric excecises 
 - ordinary least squares (OLS)
 - maximum likelihood (ML)
+  - in r and python: <https://github.com/epogrebnyak/mle-for-nowcasting>
  
 More:
 - simulation
 - time series analysis topics: ...
  
 ### Extras
-- other enabling tools: github, SO, md/pandoc
-- mention and some excercises: Matlab/Octave, gretl
+- other enabling tools
+  - github
+  - stackoverflow (SO)
+  - markdown/pandoc
+- mention and some excercises
+  - Matlab/Octave
+  - gretl
 
 
 Language versions:
