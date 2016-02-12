@@ -21,54 +21,88 @@ Introduction to open source numerical analysis software: overview of R, python/p
       - size of language core
       - distribution package Mb 
 
-### 2. General programming exercises
-- setup/installation of packages and access to online environments
+### 2. Installation
+
+Setup/installation of packages and access to online environments
+
   - language versions and their compatibility 
   - installation on Windows
   - command line and IDEs
   - packages management (install.packages, pip)
-- excercises (with language cross-reference, as [here](http://hyperpolyglot.org/numerical-analysis))
+  - online environments
+    - Julia stands out as having a stable and 'official' online IDE <https://www.juliabox.org/>
+  
+### 3. General programming exercises
+Excercises with language cross-reference (e.g. as in [here](http://hyperpolyglot.org/numerical-analysis))
   - basic operations
-  - econometrics-ralted building blocks
+    - data structures
+    - mathematic operations 
+    - flow control operators
+    - functions 
+  - econometrics-related building blocks
+    - dataframes
+    - time series data types 
+    - functions
   - data access
+    - read csv
+    - read from web
+    - usually "Sorry, no Excel"
+  - plotting
+    - native plotting procedures
+    - [matlibplot](http://matplotlib.org/)
+    - [ggplot](http://ggplot2.org/)
+    - [Gadfly](http://dcjones.github.io/Gadfly.jl/)
 
-### 3. Econometric excecises 
-- ordinary least squares (OLS)
-- maximum likelihood (ML)
-  - in r and python: <https://github.com/epogrebnyak/mle-for-nowcasting>
+### 4. Econometric excecises 
+  - Descriptive statistics
+    - Looking and sample sizes, mean/variance, correlations, etc. 
+  - Estimation methods
+    - ordinary least squares (OLS)
+    - maximum likelihood (ML)
+      - in r and python: <https://github.com/epogrebnyak/mle-for-nowcasting>
+  - Applications
+    - to be decided 
  
-More:
-- simulation
-- time series analysis topics: ...
+Comment - would be nice to have:
+- some simulation excercises 
+- some task where Julia would stand out (maybe simulation above)
+- time series analysis topics
  
 ### Extras
-- other enabling tools
-  - github
-  - stackoverflow (SO)
-  - markdown/pandoc
-- mention and some excercises
+- Mention and some excercises
   - Matlab/Octave
   - gretl
-
+  
+- Other enabling programming tools
+  - [github](https://guides.github.com/introduction/flow/) for code sharing 
+  - [stackoverflow (SO)](http://stackoverflow.com/) for good advice on solving programming tasks
+    - quality answered enforced- example: question [best language for econometrics][so1] closed as not constructive
+  - [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for quick and clean text organisation 
+  - [pandoc](http://pandoc.org/) to convert between text file formats (HTML, doc, rtf, pdf, etc)
+  - IPython
+   
+  [so1]:http://stackoverflow.com/questions/3064178/best-programming-language-for-teaching-econometrics
 
 Language versions:
 ------------------
 
-- R: https://www.r-project.org/
+- R: <https://www.r-project.org>
+  -  Suggested build: RStudio?
 
-- Python: https://www.python.org/ + http://www.scipy.org/. 
-  Suggested build: Scientific Anaconda Python https://www.continuum.io/downloads.
+- Python: <https://www.python.org> 
+  -  Suggested build: [Anaconda](https://www.continuum.io/downloads) - many scientific packages preinstalled
 
-- Julia: http://julialang.org/
+- Julia: <http://julialang.org>
 
-Notes: 
+Notes
+----
 - all are interpreted languages
 - may have different IDEs for ease of use
 - can still use even Notepad.exe to edit code 
-- have package installers
-- IPython
+
 
 View on evolution of applications of programming languages
+----------------------------------------------------------
 
 ```
 Various programming tasks:
@@ -102,7 +136,7 @@ Suggested topics:
    Mathematic operations 
    Flow control operators
    Functions
-   Modules
+   Econometrics-specific building blocks
    
 4. Data import and plotting
 
@@ -127,21 +161,18 @@ Suggested topics:
    Skillset and background
    Job market popularity 
 
-   Modern teaching in econometrics = intuition + math formulas + code
+   Good teaching in econometrics = intuition + math formulas + code & data
 
 ```
 
-Links
------
+Some links
+----------
 
-quant-econ.net
+- [Quantitative Economics](http://quant-econ.net) by Thomas Sargent and John Stachurski 
 
-comparison of software: http://economics.sas.upenn.edu/~jesusfv/comparison_languages.pdf
+- [Comparison of economics software](http://economics.sas.upenn.edu/~jesusfv/comparison_languages.pdf)
 
-comparison of syntax
-
-Questions
----------
-
-1. Maybe add gretl? Octave? Probably as an appendix, not to be endorsed for learning 
-   instead of R/python. Can provide code for excercises, though. 
+- Comparison of Matlab, R, python, Julia syntax:
+  - <http://hyperpolyglot.org/numerical-analysis>
+  - <http://www.math.umaine.edu/~hiebeler/comp/matlabR.pdf>
+  - <http://mathesaurus.sf.net/ http://mathesaurus.sourceforge.net/matlab-python-xref.pdf>
