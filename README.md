@@ -31,18 +31,24 @@ Setup/installation of packages and access to online environments
     - command line examples
       - what runs a text file with program code 
       - what opens an interpreter
-    - popular text editors (bare [Notepad+][npp], but also [a lot more][IDEs])
+    - popular text editors (e.g. [Notepad+][npp], but also [a lot more][editors])
     - IDEs
       - standard (IDLE for python, R.exe, Juno for Julia)
-      - third-party (Spyder for python in Anaconda)
+      - third-party (e.g. Spyder for python in Anaconda)
       - note: given we aim 3 languages it would be nice to have an IDE to run them all 
   - packages management (install.packages, pip)
   - online environments
     - Julia stands out as having a stable and 'official' online IDE <https://www.juliabox.org>
 
 [npp]:https://notepad-plus-plus.org
-[IDEs]:https://spin.atomicobject.com/2014/03/13/light-table-github-atom-ide
-  
+[editors]:https://spin.atomicobject.com/2014/03/13/light-table-github-atom-ide
+ 
+To mention:
+- these are all interpreted languages
+- may have different IDEs for ease of use
+- can still use even Notepad.exe to edit code and bare console to run it
+ 
+
 ### 3. General programming exercises
 Excercises with language cross-reference (e.g. as in [here](http://hyperpolyglot.org/numerical-analysis))
   - basic operations
@@ -84,7 +90,7 @@ and how to work better with them (not treating as pure 'black boxes').
 
 For both methods, as an excecise, I like the idea of generating the data by known data generating process and looking at how regression works or fails on this data. 
 
-For **applications** part need your suggestion - it could be good to port at least some of your Eviews time series code to R/pandas and also provide an example where Julia code is much faster than in R/python to prove Julia useful (maybe some simulation excercise).
+For *applications* part need your suggestion - it could be good to port at least some of your Eviews time series code to R/pandas and also provide an example where Julia code is much faster than in R/python to prove Julia useful (maybe some simulation excercise).
 
   - Descriptive statistics
     - Load data from web source or local file 
@@ -132,13 +138,6 @@ Language versions:
   -  Suggested build: [Anaconda](https://www.continuum.io/downloads) - many scientific packages preinstalled
 
 - Julia: <http://julialang.org>
-
-Notes
-----
-- all are interpreted languages
-- may have different IDEs for ease of use
-- can even use Notepad.exe to edit code 
-
 
 
 View on evolution of applications of programming languages
