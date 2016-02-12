@@ -1,5 +1,5 @@
-Introduction to open source numerical analysis software: overview of R, python/pandas and Julia
-===============================================================================================
+Introduction to numerical analysis in R, python/pandas and Julia
+================================================================
 
 ### 1. Introduction to R, python/pandas and Julia
   - scope of application - what are these programming languages for?
@@ -27,10 +27,21 @@ Setup/installation of packages and access to online environments
 
   - language versions and their compatibility 
   - installation on Windows
-  - command line and IDEs
+  - command line, text editors and IDEs
+    - command line examples
+      - what runs a text file with program code 
+      - what opens an interpreter
+    - popular text editors (bare [Notepad+][npp], but also [a lot more][IDEs])
+    - IDEs
+      - standard (IDLE for python, R.exe, Juno for Julia)
+      - third-party (Spyder for python in Anaconda)
+      - note: given we aim 3 languages it would be nice to have an IDE to run them all 
   - packages management (install.packages, pip)
   - online environments
-    - Julia stands out as having a stable and 'official' online IDE <https://www.juliabox.org/>
+    - Julia stands out as having a stable and 'official' online IDE <https://www.juliabox.org>
+
+[npp]:https://notepad-plus-plus.org
+[IDEs]:https://spin.atomicobject.com/2014/03/13/light-table-github-atom-ide
   
 ### 3. General programming exercises
 Excercises with language cross-reference (e.g. as in [here](http://hyperpolyglot.org/numerical-analysis))
@@ -52,14 +63,39 @@ Excercises with language cross-reference (e.g. as in [here](http://hyperpolyglot
     - [matlibplot](http://matplotlib.org/)
     - [ggplot](http://ggplot2.org/)
     - [Gadfly](http://dcjones.github.io/Gadfly.jl/)
+  - additional topics
+    - debugging tools 
+    - unit testing 
 
 ### 4. Econometric excecises 
+
+This section is really why why introdice and dig into R, python and julia. It has three parts:
+descriptive statistics, estimation methods, applications. 
+
+For *descriptive statistics* the purpose is rather clear - is to be able to access data, do some manipulations/transforms/summaries over it and plot.  
+
+In *estimation methods* I suggest looking and OLS and max likelihood (ML) and to do own 
+simple code for it as well as introduce related packages. It should make it more clear what 
+the packages are doing as compared to core algorithm (ususally more precision, border cases, statistics) 
+and how to work better with them (not treating as pure 'black boxes'). 
+
+- For max likelihood I already wrote some code in python and r which we can use <https://github.com/epogrebnyak/mle-for-nowcasting>. 
+- Introducing OLS should not be too hard, but I think rewarding to follow, again in own code and in standard packages, like ```ls()``` in R. 
+
+For both methods, as an excecise, I like the idea of generating the data by known data generating process and looking at how regression works or fails on this data. 
+
+For **applications** part need your suggestion - it could be good to port at least some of your Eviews time series code to R/pandas and also provide an example where Julia code is much faster than in R/python to prove Julia useful (maybe some simulation excercise).
+
   - Descriptive statistics
-    - Looking and sample sizes, mean/variance, correlations, etc. 
+    - Load data from web source or local file 
+    - Look at sample sizes, mean/variance, correlations, missing data etc. 
+    - Plot some data and summaries (e.g. distribution histogram for time series)
+    
   - Estimation methods
     - ordinary least squares (OLS)
     - maximum likelihood (ML)
       - in r and python: <https://github.com/epogrebnyak/mle-for-nowcasting>
+       
   - Applications
     - to be decided 
  
@@ -69,25 +105,28 @@ Comment - would be nice to have:
 - time series analysis topics
  
 ### Extras
-- Mention and some excercises
-  - Matlab/Octave
-  - gretl
-  
+
 - Other enabling programming tools
   - [github](https://guides.github.com/introduction/flow/) for code sharing 
   - [stackoverflow (SO)](http://stackoverflow.com/) for good advice on solving programming tasks
     - quality answered enforced- example: question [best language for econometrics][so1] closed as not constructive
   - [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for quick and clean text organisation 
   - [pandoc](http://pandoc.org/) to convert between text file formats (HTML, doc, rtf, pdf, etc)
-  - IPython
-   
+
   [so1]:http://stackoverflow.com/questions/3064178/best-programming-language-for-teaching-econometrics
 
+- Not covered
+  - Matlab/Octave
+  - gretl
+  - IPython
+  
+  May provide some demos or excercises for Matlab/Octave and gretl. 
+  
 Language versions:
 ------------------
 
 - R: <https://www.r-project.org>
-  -  Suggested build: RStudio?
+  -  Suggested build: [RStudio](https://www.rstudio.com/)
 
 - Python: <https://www.python.org> 
   -  Suggested build: [Anaconda](https://www.continuum.io/downloads) - many scientific packages preinstalled
@@ -98,7 +137,8 @@ Notes
 ----
 - all are interpreted languages
 - may have different IDEs for ease of use
-- can still use even Notepad.exe to edit code 
+- can even use Notepad.exe to edit code 
+
 
 
 View on evolution of applications of programming languages
@@ -118,8 +158,8 @@ Econometrics:                           EViews, gretl -> R, Python (with Pandas 
 High performance statistic computing:             C++ -> Julia
 ```
 
-Suggested topics:
------------------
+Oroginal short plan:
+--------------------
 
 ```
 1. What is this software for?
@@ -157,11 +197,12 @@ Suggested topics:
 6. Conclusion: which is software is best?
 
    Depends of type of task you are solving 
-   Expression/readability of code 
-   Skillset and background
+   Expression/readability of code, persoanl aesthetic pleasure  
+   Your skillset and background
    Job market popularity 
 
-   Good teaching in econometrics = intuition + math formulas + code & data
+
+Good teaching in econometrics = intuition + math formulas + code & data ?
 
 ```
 
@@ -175,4 +216,4 @@ Some links
 - Comparison of Matlab, R, python, Julia syntax:
   - <http://hyperpolyglot.org/numerical-analysis>
   - <http://www.math.umaine.edu/~hiebeler/comp/matlabR.pdf>
-  - <http://mathesaurus.sf.net/ http://mathesaurus.sourceforge.net/matlab-python-xref.pdf>
+  - <http://mathesaurus.sourceforge.net/matlab-python-xref.pdf>
